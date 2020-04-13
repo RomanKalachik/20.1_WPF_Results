@@ -91,6 +91,7 @@ namespace WPFChart {
             MeasureMemConsumption(null, null);
             MeasureZoom(null, null);
             MeasurePan(null, null);
+            MessageBox.Show("Done");
         }
         void MeasureLoading(object sender, RoutedEventArgs e)
         {
@@ -123,9 +124,9 @@ namespace WPFChart {
             {
                 LoadData(count, allowResampling);
                 long chartSize = LogMemConsumption();
-                result += string.Format("{0}, {1}{2}", count, chartSize, Environment.NewLine);
+                result += string.Format("{0}, {1}{2}", count, -chartSize, Environment.NewLine);
             }));
-            File.WriteAllText(string.Format("result_scroll_{0}.txt", allowResampling), result);
+            File.WriteAllText(string.Format("result_memconsumptoin_{0}.txt", allowResampling), result);
         }
         void MeasurePan(object sender, RoutedEventArgs e)
         {
@@ -181,7 +182,7 @@ namespace WPFChart {
         }
         void PerofrmScroll(XYDiagram2D xyd2d)
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 25; i++)
             {
                 xyd2d.ScrollHorizontally(10);
                 DoEvents();

@@ -1,0 +1,28 @@
+﻿<Window
+    x:Class="WPFChart.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
+    xmlns:local="clr-namespace:WPFChart"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="MainWindow">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <dxc:ChartControl x:Name="chart" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+
+            <Button Margin="5" Click="MeasureMemConsumption">Test Memory</Button>
+            <Button Margin="5" Click="MeasureLoading">Test Loading</Button>
+            <Button Margin="5" Click="MeasureZoom">Test Zoom</Button>
+            <Button Margin="5" Click="MeasurePan">Test Pan</Button>
+            <Button Margin="5" Click="MeasureAll">Test All</Button>
+        </StackPanel>
+    </Grid>
+
+</Window>

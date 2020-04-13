@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGenerator", "DataGenerator\DataGenerator.csproj", "{A3BAD4FB-32D3-482B-864A-203436CA155D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFChart", "WPFChart\WPFChart.csproj", "{01473672-63DA-4E6B-BA39-FA8E84E6F5D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3BAD4FB-32D3-482B-864A-203436CA155D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3BAD4FB-32D3-482B-864A-203436CA155D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3BAD4FB-32D3-482B-864A-203436CA155D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3BAD4FB-32D3-482B-864A-203436CA155D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01473672-63DA-4E6B-BA39-FA8E84E6F5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01473672-63DA-4E6B-BA39-FA8E84E6F5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01473672-63DA-4E6B-BA39-FA8E84E6F5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01473672-63DA-4E6B-BA39-FA8E84E6F5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC297654-8205-4857-9FE7-B5C2DC75106F}
+	EndGlobalSection
+EndGlobal

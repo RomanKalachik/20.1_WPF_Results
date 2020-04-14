@@ -5,7 +5,7 @@ using System.Linq;
 namespace DataGenerator {
     public class DataItem {
         public float Argument { get; set; }
-        public float Value { get; set; }
+        public double Value { get; set; }
     }
     public class Generator {
         public static ObservableCollection<DataItem> Generate(long count) {

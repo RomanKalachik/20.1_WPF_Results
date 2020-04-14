@@ -1,0 +1,40 @@
+﻿<Window
+    x:Class="WPFChart.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ig="http://schemas.infragistics.com/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="MainWindow">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <ig:XamDataChart x:Name="DataChart" Margin="5" >
+            <ig:XamDataChart.Axes>
+                <ig:CategoryXAxis x:Name="xmXAxis" ItemsSource="{Binding}" Label="{}{Label}" >
+                    <ig:CategoryXAxis.LabelSettings >
+                        <ig:AxisLabelSettings Location="OutsideTop" Extent="35" />
+                    </ig:CategoryXAxis.LabelSettings>
+                </ig:CategoryXAxis>
+                <ig:NumericYAxis x:Name="xmYAxis" >
+                    <ig:NumericYAxis.LabelSettings >
+                        <ig:AxisLabelSettings Location="OutsideLeft" Extent="55" />
+                    </ig:NumericYAxis.LabelSettings>
+                </ig:NumericYAxis>
+            </ig:XamDataChart.Axes>
+        </ig:XamDataChart>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+          
+            <Button Margin="5" Click="MeasureMemConsumption">Test Memory</Button>
+            <Button Margin="5" Click="MeasureLoading">Test Loading</Button>
+            <Button Margin="5" Click="MeasureZoom">Test Zoom</Button>
+            <Button Margin="5" Click="MeasurePan">Test Pan</Button>
+            <Button Margin="5" Click="MeasureAll">Test All</Button>
+        </StackPanel>
+    </Grid>
+
+</Window>

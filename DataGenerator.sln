@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFChart_Scicharts", "Scich
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFChart_Telerik", "Telerik\WPFChart_Telerik.csproj", "{778C6BFF-09E7-4607-A91F-F7325E87D6BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFChart_Teechart", "Stema\WPFChart_Teechart.csproj", "{63CC301F-0E9A-47FC-829F-C58B6C64ECCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFChart_Syncfusion", "Syncfusion\WPFChart_Syncfusion.csproj", "{57615A5C-6C1D-4AAD-BE4C-1CCACB04BBAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{778C6BFF-09E7-4607-A91F-F7325E87D6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{778C6BFF-09E7-4607-A91F-F7325E87D6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{778C6BFF-09E7-4607-A91F-F7325E87D6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CC301F-0E9A-47FC-829F-C58B6C64ECCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CC301F-0E9A-47FC-829F-C58B6C64ECCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CC301F-0E9A-47FC-829F-C58B6C64ECCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CC301F-0E9A-47FC-829F-C58B6C64ECCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57615A5C-6C1D-4AAD-BE4C-1CCACB04BBAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57615A5C-6C1D-4AAD-BE4C-1CCACB04BBAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57615A5C-6C1D-4AAD-BE4C-1CCACB04BBAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57615A5C-6C1D-4AAD-BE4C-1CCACB04BBAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

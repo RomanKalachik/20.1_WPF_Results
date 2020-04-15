@@ -1,4 +1,5 @@
 ﻿using DataGenerator;
+using Syncfusion.UI.Xaml.Charts;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -20,6 +21,12 @@ namespace WPFChart {
         }
         void bindDataWpf()
         {
+            Chart.Series.Clear();
+            var line = new FastLineSeries();
+            line.ItemsSource = chartSource;
+            line.XBindingPath = "Argument";
+            line.YBindingPath = "Value";
+            Chart.Series.Add(line);
         }
         void ClearChart()
         {
@@ -99,9 +106,11 @@ namespace WPFChart {
             {
                 Stopwatch resampled = new Stopwatch();
                 LoadDataEx(count);
+                Chart.PrimaryAxis.ZoomFactor = 0.5;
                 resampled.Start();
                 for (int i = 0; i < 25; i++)
                 {
+                    Chart.PrimaryAxis.ZoomPosition = i * 100;
                     DoEvents();
                 }
                 resampled.Stop();
@@ -119,6 +128,7 @@ namespace WPFChart {
                 resampled.Start();
                 for (int i = 0; i < 5; i++)
                 {
+                    Chart.PrimaryAxis.ZoomFactor = i / 5.0;
                     DoEvents();
                 }
                 resampled.Stop();

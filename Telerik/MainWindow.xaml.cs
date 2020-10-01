@@ -17,6 +17,14 @@ namespace SplineSeries {
             LoadData(1000);
             chart.Zoom = new Size(2, 2);
             chart.PanOffset = new Point(-60, 10);
+            Loaded += (s, e) =>
+            {
+                Dispatcher.BeginInvoke((Action)(() =>
+                {
+                    string[] args = Environment.GetCommandLineArgs();
+                    if (args.Length > 1) MeasureAll(null, null);
+                }));
+            };
         }
         void bindDataWpf()
         {
@@ -67,7 +75,7 @@ namespace SplineSeries {
             MeasureMemConsumption(null, null);
             MeasureZoom(null, null);
             MeasurePan(null, null);
-            MessageBox.Show("Done");
+            Application.Current.Shutdown();
         }
         void MeasureLoading(object sender, RoutedEventArgs e)
         {

@@ -14,7 +14,7 @@
             <RowDefinition />
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <dxc:ChartControl x:Name="chart" />
+        <dxc:ChartControl x:Name="chart" IsDirectXSurfaceRendering="True" />
         <StackPanel Grid.Row="1" Orientation="Horizontal">
 
             <Button Margin="5" Click="MeasureMemConsumption">Test Memory</Button>

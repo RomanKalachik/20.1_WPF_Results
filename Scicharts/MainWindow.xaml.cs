@@ -1,5 +1,6 @@
 ﻿using DataGenerator;
 using SciChart.Charting.Model.DataSeries;
+using SciChart.Charting.Visuals;
 using SciChart.Charting.Visuals.RenderableSeries;
 using SciChart.Data.Model;
 using System;
@@ -20,6 +21,7 @@ namespace WPFChart {
         long prevAvailable = 0;
         public MainWindow()
         {
+
             InitializeComponent();
             Loaded += (s, e) =>
             {
